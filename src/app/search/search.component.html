@@ -1,0 +1,36 @@
+<!-- search bar -->
+<div class="container">
+    <h1 class="text-center title pt-5">
+        <i class="fas fa-video logo pr-2"></i>flickSave - Save a Flick for Later!</h1>
+
+    <div class="row searchbar">
+        <div class="col">
+            <div class="input-group mb-3">
+                <input [(ngModel)]="input" type="text" class="form-control" placeholder="Enter A Movie">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" (click)="searchShows()">search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<!-- cards -->
+<div class="container">
+    <div class="row content p-5">
+        <div class="col-sm-3 p-3" *ngFor="let result of results; let i = index">
+            <div class="card">
+                <img class="card-img-top lightbox" src="{{ result.Poster }}" alt="{{  result.Title  }}">
+                <div class="card-body ">
+                    <h5 class="card-title ">{{ result.Title }}</h5>
+                    <p class="card-text ">Type: {{ result.Type }}</p>
+                    <i class="fas fa-calendar-alt mr-2 ">{{ result.Year }}</i>
+                    <br>
+                    <button mat-icon-button (click)="addBookmark(i)">
+                        <i class="fas fa-ticket-alt ticket pr-2 "></i>Watch Later</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

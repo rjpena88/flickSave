@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+        background-image: url("https://cdn-images-1.medium.com/max/2000/0*z9WXKtzmXIvVj6UK.");
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }

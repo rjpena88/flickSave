@@ -1,0 +1,28 @@
+.cursor {
+    cursor: pointer;
+    color: blue;
+}
+.title {
+    color: white;
+}
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+.card
+{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+.logo {
+font-size: 50px;
+color: rgb(153, 13, 13);
+}
+.navbar {
+background: rgba(0, 0, 0, .3)
+}
+hr {
+    border-top: 1px solid rgb(197, 197, 197);
+}
+.ticket {
+    color: rgb(153, 10, 10);
+}
